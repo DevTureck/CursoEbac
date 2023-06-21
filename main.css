@@ -1,127 +1,56 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body > header {
-    background-color: #2f3640;
-    padding:  16px 0px;
-    color: #cbcbcf;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header li {
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-header li a {
-    color: #afafb1;
-    text-decoration: none;
-    margin-left: 16px;
+    box-sizing: border-box;
 }
 
 .container {
-    width: 1366px;
+    max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
 }
 
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articles article img {
-    /*height: 180px;*/
-    width: 100%;
-}
-
-.articles article {
-    width: 30%;
-}
-
-section {
-    padding: 16px 0px;
-}
-section h2,
-.articlesarticle {
-    margin-bottom: 16px;
-}
-
-.articles article h3 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.articles article a {
-    background-color: blue;
-    color: white;
+header {
+    background-color: #464242;
+    color: #e0dd10;
     padding: 8px;
-    display: inline-block;
-    margin-bottom: 14px;
-    text-decoration: none;
+    text-align: center;
+}
+
+form {
+    background-color: #999696;
+    padding: 10px 0;
+}
+
+form input {
+    margin-bottom: 8px;
+    padding: 5px 5px;
+    align-items: center;
+    
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formulario {
+    display: block;
+    text-align: center;
+}
+
+.input {
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;  
+}
+
+#submit-btn {
+    padding: 5px 12px;
+    background-color: #e0dd10 ;
+    border: none;
     font-weight: bold;
-    margin-top: 8px;
-}
-
-.articles article a:hover {
-    text-decoration: underline;
-}
-
-.articles article p,
-.articles article a {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.articles article h3 {
-    font-size: 24px;
-}
-
-section h2 {
-    font-size: 32px;
-}
-
-#sports {
-    background-color: rgba(0, 255, 0, 0.1)
-}
-
-#sports .articles article a {
-    background-color: rgba(0, 255, 0, 0.5);
-    color: black;
-}
-
-#economy {
-    background-color: #f7f39a;
-}
-
-#economy .articles article a {
-    background-color: #ff9f1a;
-    color: black;
-}
-
-#tecnology {
-    background-color: rgb(198, 199, 204)
-}
-
-#tecnology .articles article a {
-    background-color: #343753;
-    color: white;
-}
-
-#entertain {
-    background-color: rgb(217, 154, 223)
-}
-
-#entertain .articles article a {
-    background-color: #e92c6b;
-    color: white;
 }
 

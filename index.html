@@ -1,245 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt br">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portal de notícias</title>
-    <link rel="stylesheet" href="./main.css" />
+    <title>jQuery Plugin</title>
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <h1>Meu portal de notícias</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
-                    </li>
-                    <li>
-                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
-                    </li>
-                    <li>
-                        <a href="#tecnology" title="Ir para a seção de notícias">Tecnologia</a>
-                    </li>
-                    <li>
-                        <a href="#entertain" title="Ir para a seção de notícias">Entretenimento</a>
-                    </li>
-                </ul>
-            </nav>
+
+    <div class="container">
+        <header>
+            <h2>Fomulário jQuery</h2>
+        </header>
+
+        <div class="formulario">
+            <form>
+                <div class="input">
+                    <label for="nome">Nome:</label>
+                    <input placeholder="Seu nome completo" type="name" id="nome">
+                </div>
+                <div class="input">
+                    <label for="email">E-mail:</label>
+                    <input placeholder="Seu email de contato" type="email" id="email">
+                </div>
+                <div class="input">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone">
+                </div>
+                <div class="input">
+                    <label for="cpf">CPF</label>
+                    <input type="tel" id="cpf">
+                </div>
+                <div class="input">
+                    <label for="endereco">Endereço:</label>
+                    <input placeholder="Rua, n.º - Bairro" type="adress" id="endereco">
+                </div>
+                <div class="input>
+                    <label for=" cep">CEP:</label>
+                    <input type="tel" id="cep">
+                </div>
+                <div>
+                    <button id="submit-btn" type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
-    </header>
-    <section id="sports">
-        <div class="container">
-            <h2>Esportes</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Grande clássico na noite de hoje</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/futebol-americano.jpg"
-                        alt="Jogador de futebol americano correndo com a bola na mão" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Noite do Superbowl</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Notícia sobre a NBA</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section id="economy">
-        <div class="container">
-            <h2>Economia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Dólar em alta de 0.50%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Euro em queda de 0.40%</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
-                    <header>
-                        <time>13/07/2022 às 12:35</time>
-                    </header>
-                    <h3>Alta no preço do barril do petróleo</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section id="tecnology">
-        <div class="container">
-            <h2>Tecnologia</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/tecnologia.png" alt="Ilustração de tecnologia" />
-                    <header>
-                        <time>10/05/2023 às 21:00</time>
-                    </header>
-                    <h3>A ascenção da tecnologia</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/satelite.jpg" alt="Satélite no espaço" />
-                    <header>
-                        <time>10/05/2023 às 21:00</time>
-                    </header>
-                    <h3>A importância dos satélites</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/painel.jpg" alt="Painéis solares" />
-                    <header>
-                        <time>10/05/2023 às 21:00</time>
-                    </header>
-                    <h3>Energia limpa em alta</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section id="entertain">
-        <div class="container">
-            <h2>Entretenimento</h2>
-            <div class="articles">
-                <article>
-                    <img src="./imagens/stream.jpg" alt="Controle apontado para televisão" />
-                    <header>
-                        <time>10/05/2023 às 21:00</time>
-                    </header>
-                    <h3>Os streamings com mais assinantes</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/show.jpg" alt="Publíco de um show" />
-                    <header>
-                        <time>10/05/2023 às 21:00</time>
-                    </header>
-                    <h3>Grande festival se aproxima</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-                <article>
-                    <img src="./imagens/jogo.jpg" alt="Pessoa em frente ao videogame" />
-                    <header>
-                        <time>10/05/2023 às 21:00</time>
-                    </header>
-                    <h3>Jogos em pré-venda</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam
-                        labore
-                        architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur
-                        error?
-                        Laborum, modi itaque. Sunt.
-                    </p>
-                    <a href="#" title="Leia a notícia completa">Ler mais</a>
-                </article>
-            </div>
-        </div>
-    </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.js"></script>
+    <script src="./JS/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('#telefone').mask('(00) 00000-0000', {
+                placeholder: '(00) 00000-000'
+            })
+
+            $('#cpf').mask('000.000.000-00', {
+                placeholder: '123.456.789-00'
+            })
+
+            $('#cep').mask('00000-000', {
+                placeholder: '12345-678'
+            })
+
+        })
+    </script>
+
 </body>
 
 </html>
